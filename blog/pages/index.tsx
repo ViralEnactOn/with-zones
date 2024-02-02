@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export default function Blog() {
+  const APP_URL = process.env.APP_URL as string;
   return (
     <div>
       <h3>This is our blog</h3>
@@ -12,7 +13,7 @@ export default function Blog() {
           <Link href="/post/2">Post 2</Link>
         </li>
       </ul>
-      <Link href={process.env.APP_URL as string}>Home</Link>
+      <Link href={`${APP_URL}`}>Home</Link>
     </div>
   );
 }
