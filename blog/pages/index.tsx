@@ -12,7 +12,7 @@ export default function Blog() {
           <Link href="/post/2">Post 2</Link>
         </li>
       </ul>
-      <Link href="/">Home</Link>
+      <Link href="http://localhost:3001/">Home</Link>
     </div>
   );
 }
