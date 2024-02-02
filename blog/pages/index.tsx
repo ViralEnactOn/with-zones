@@ -12,7 +12,7 @@ export default function Blog() {
           <Link href="/post/2">Post 2</Link>
         </li>
       </ul>
-      <Link href="http://localhost:3001/">Home</Link>
+      <Link href={process.env.APP_URL as string}>Home</Link>
     </div>
   );
 }
